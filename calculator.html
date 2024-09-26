@@ -1,0 +1,77 @@
+<!doctype html> 
+<head> 
+<script>  
+        function dis(val)  
+         {  
+             document.getElementById("result").value+=val  
+         }  
+        function solve()  
+         {  
+             let x = document.getElementById("result").value  
+             let y = eval(x)  
+             document.getElementById("result").value = y  
+         }  
+         function clr()  
+         {  
+             document.getElementById("result").value = ""  
+         }  
+      </script>  
+      <style>  
+         .title{  
+         margin-bottom: 10px;  
+         text-align:center;  
+         width: 210px;  
+         color:green;  
+         border: solid black 2px;  
+         }  
+   
+         input[type="button"]  
+         {  
+         background-color:rgb(221, 0, 255);  
+         color: black;  
+         border: solid black 2px;  
+         width:100%  
+         }  
+   
+         input[type="text"]  
+         {  
+         background-color:white;  
+         border: solid black 2px;  
+         width:100%  
+         }  
+      </style>  
+   </head>  
+<body> 
+<span class="title">Navadeep Calculator</span> 
+<table style="border:1px solid black" border="2"> 
+<tr> 
+<td colspan="3"><input type="text" id="result"></td> 
+<td><input type="button" onclick="clr()" value="C"></td> 
+</tr> 
+<tr> 
+<td><input type="button" onclick="dis('1')" value="1" style="width:100%"></td> 
+<td><input type="button" onclick="dis('2')" value="2" style="width:100%"></td> 
+<td><input type="button" onclick="dis('3')" value="3" style="width:100%"></td> 
+<td><input type="button" onclick="dis('/')" value="/" style="width:100%"></td> 
+</tr> 
+<tr> 
+<td><input type="button" onclick="dis('4')" value="4" style="width:100%"></td> 
+<td><input type="button" onclick="dis('5')" value="5" style="width:100%"></td> 
+<td><input type="button" onclick="dis('6')" value="6" style="width:100%"></td> 
+<td><input type="button" onclick="dis('-')" value="-" style="width:100%"></td> 
+</tr> 
+<tr> 
+<td><input type="button" onclick="dis('7')" value="7" style="width:100%"></td> 
+<td><input type="button" onclick="dis('8')" value="8" style="width:100%"></td> 
+<td><input type="button" onclick="dis('9')" value="9" style="width:100%"></td> 
+<td><input type="button" onclick="dis('+')" value="+" style="width:100%"></td> 
+</tr> 
+<tr> 
+<td><input type="button" onclick="dis('.')" value="." style="width:100%"></td> 
+<td><input type="button" onclick="dis('0')" value="0" style="width:100%"></td> 
+<td><input type="button" onclick="solve()" value="=" style="width:100%"></td> 
+<td><input type="button" onclick="dis('')" value="" style="width:100%"></td> 
+</tr> 
+</table> 
+</body> 
+</html>
